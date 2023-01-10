@@ -8,7 +8,12 @@
 
 ## Informações
 - Esse Data Pipeline Consome dados de uma API chamada "brapi" que fornece informações sobre ações, criptos... Você pode conhecer mais em: [brapi](https://brapi.dev/) . Após realizar as requisições das seguintes ações: 'PETR4', 'PETR3', 'BRAP4', 'BRKM5', 'MRFG3', 'GOAU4', 'QUAL3', 'CMIN3', 'GGBR4'. E cripto moedas: 'BTC', 'ETH', 'DOGE', 'LTC', 'USDC'. Armazena os dados em um arquivo csv.
-- Dados Armazenados: Name (Nome completo da ação/cripto), Coin (Abreviatura da cripto), Symbol(Abreviatura da ação), Price (Preço ação/cripto), Date (Data da requisição)
+- Dados Armazenados: 
+    - Name (Nome completo da ação/cripto);
+    - Coin (Abreviatura da cripto);
+    - Symbol(Abreviatura da ação);
+    - Price (Preço ação/cripto);
+    - Date (Data da requisição).
 
 ## Funcionamento
 1. HttpSensor para verificar se a API da Brapi está disponível.
@@ -30,14 +35,16 @@
 ## Como Executar
 Requisitos: possuir docker, docker-compose e git instalados.
 
+Clonar repositório: 
 ```
-Clonar repositório: git clone https://github.com/gabrielpedrosati/airflow-personal-finance.git
+git clone https://github.com/gabrielpedrosati/airflow-personal-finance.git
+```
+Executar no PowerShell na pasta do repositório do git:
+```
+ docker-compose up
 ```
 ```
-- Executar no PowerShell na pasta do repositório do git: docker-compose up
-```
-```
-- Acessar localhost:8080, login user: airflow, password: airflow, ir em DAGS e executar.
+Acessar localhost:8080, login user: airflow, password: airflow, ir em DAGS e executar.
 ```
 
 ## Contato
