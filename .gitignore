@@ -1,0 +1,15 @@
+/dags/__pycache__/
+/dags/data
+/dags/functions
+/dags/.airflowignore
+/dags/alert_dag.py
+/dags/consumer.py
+/dags/dag_example.py
+/dags/depends_task.py
+/dags/etl_data_warehouse.py
+/dags/group_dag.py
+/dags/packaged_dag.zip
+/dags/producer.py
+/dags/user_processing.py
+/logs/*
+/mnt/airflow/airflow.cfg
